@@ -7,5 +7,11 @@
   
   <p>Logic: <a href="https://scratch.mit.edu/projects/814627623">Bola Maluca</a></p>
   
+  <br />
+  
+  <li>Projeto desenvolvido na FAP com objetivo de ajudar pessoas mais em idade, com tarefas normais do dia a dia.</li>
+  <br />
+  <p>FAP - Projetinho: <a href="https://smartphone-manual.netlify.app/#">Smart-manual</a></p>
+  
       
 </header>
