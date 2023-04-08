@@ -9,7 +9,7 @@
   
   <br />
   
-  <li>Projeto desenvolvido na FAP com objetivo de ajudar pessoas mais em idade, com tarefas normais do dia a dia.</li>
+  <li>Projeto desenvolvido na FAP com objetivo de ajudar pessoas de idade, com tarefas normais do dia a dia.</li>
   <br />
   <p>FAP - Projetinho: <a href="https://smartphone-manual.netlify.app/#">Smart-manual</a></p>
   
