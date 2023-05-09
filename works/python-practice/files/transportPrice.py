@@ -3,3 +3,9 @@
 
 '''
 
+distance = int(input("Digite o valor de distancia deseja percorrer: "))
+
+if distance <= 200:
+    print("Esse é o total para viagem de 200Km: $",0.50 * distance,"Reais")
+else:
+    print("Esse é o total para viagem acima de 200Km: $",0.45 * distance,"Reais")
