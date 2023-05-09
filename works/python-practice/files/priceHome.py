@@ -11,3 +11,7 @@ provision = (price_home / years_price) + 3
 print(provision)
 limit_salary = (30 / 100) * price_home
 
+if provision < limit_salary:
+    print(provision)
+else:
+    print("Desculpe seu saldo não bate.")
