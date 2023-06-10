@@ -14,6 +14,7 @@ button{
 .content-info, .infoPage{
   display: grid;
   grid-template: auto / auto auto;
+  margin: 150px;
 }
 
 .infoPage{
@@ -47,7 +48,11 @@ h2{
 }
 
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:1200px) {
+  .content-info, .infoPage{
+    margin: 0;
+  }
+
   .infoPage{
     display: block;
     margin: 20px 10px auto 10px;
@@ -58,7 +63,7 @@ h2{
   }
 }
 
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:500px) {
   header{
     text-align: center;
   }

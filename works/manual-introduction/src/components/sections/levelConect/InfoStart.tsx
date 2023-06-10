@@ -1,11 +1,31 @@
 import icon_win from 'src/assets/icons/trophy.png'
 import Fap_logo from 'src/assets/icons/fap-logo.png'
 
-import Phone_alarm from 'src/assets/img/beginner/phone-alarm.jpg'
-import Phone_off from 'src/assets/img/beginner/phone-off.jpg'
-import Phone_background from 'src/assets/img/beginner/phone-background.jpg'
-import Phone_date from 'src/assets/img/beginner/phone-date_hors.jpg'
-import Phone_email from 'src/assets/img/beginner/create-email.png'
+import Email_phoneFirst from 'src/assets/img/beginner/sectionFirst/email-phoneFirst.jpg'
+import Email_phoneSecond from 'src/assets/img/beginner/sectionFirst/email-phoneSecond.jpg'
+import Email_phoneThird from 'src/assets/img/beginner/sectionFirst/email-phoneThird.jpg'
+import Email_phoneFourth from 'src/assets/img/beginner/sectionFirst/email-phoneFourth.jpg'
+
+import Wifi_phoneFirst from 'src/assets/img/beginner/sectionSecond/wifi-phoneFirst.jpg'
+import Wifi_phoneSecond from 'src/assets/img/beginner/sectionSecond/wifi-phoneSecond.jpg'
+
+import wallpaper_phoneFirst from 'src/assets/img/beginner/sectionThird/wallpaper-phoneFirst.jpeg'
+import wallpaper_phoneSecond from 'src/assets/img/beginner/sectionThird/wallpaper-phoneSecond.png'
+import wallpaper_phoneThird from 'src/assets/img/beginner/sectionThird/wallpaper-phoneThird.png'
+
+import Install_appFirst from 'src/assets/img/beginner/sectionFourth/install-appFirst.png'
+import Install_appSecond from 'src/assets/img/beginner/sectionFourth/install-appSecond.png'
+import Install_appThird from 'src/assets/img/beginner/sectionFourth/install-appThird.png'
+import Install_appFourth from 'src/assets/img/beginner/sectionFourth/install-appFourth.png'
+
+import Section_configFirst from 'src/assets/img/beginner/sectionFifth/section-confingFirst.jpeg'
+import Section_configSecond from 'src/assets/img/beginner/sectionFifth/section-confingSecond.jpeg'
+import Section_configThird from 'src/assets/img/beginner/sectionFifth/section-confingThird.jpeg'
+import Section_configFourth from 'src/assets/img/beginner/sectionFifth/section-confingFourth.jpeg'
+
+import Pass_configFirst from 'src/assets/img/beginner/sectionSixth/password-ConfigFirst.jpeg'
+import Pass_configSecond from 'src/assets/img/beginner/sectionSixth/password-ConfigSecond.jpeg'
+import Pass_configThird from 'src/assets/img/beginner/sectionSixth/password-ConfigThird.jpeg'
 
 import { Home } from 'src/components/home/Home'
 import { InfoSection } from './infoSection/InfoSection'
@@ -17,14 +37,30 @@ export function InfoStartFirst(): JSX.Element {
       before={<Home />}
       after={<InfoStartSecond />}
       fap_logo={Fap_logo}
-      level="Iniciante - Como configurar o despertador no celular. 📱"
-      generic_img={Phone_alarm}
-      title_second={['Como configurar o despertador no celular:']}
-      text_rest={[
-        ' Sobre seu dispositivo encontra vai sobre uma lupa de pesquisa, localizado no canto superior do dispositivo e então pesquisa sobre relógio, e clica sobre o app.',
-        ' Depois clicado no app acessa as opções de alarme e configura, por qual horário desejar aplicar.',
-        'Por isso é tudo! Te vejo no próximo tópico. 🫠',
+      level="Como Enviar Email Pelo Celular - Samsung Galaxy J8 Versão do Android 10 - Criado por Maycon📱"
+      generic_img={[
+        Email_phoneFirst,
+        Email_phoneSecond,
+        Email_phoneThird,
+        Email_phoneFourth,
       ]}
+      title_second={['1° passo:', '2° passo:', '3° passo:', '4° passo:']}
+      text_rest={{
+        fistSection: [
+          '>> Muitos não possuem o privilégio de ter um computador em casa, e por algum acaso necessita enviar em email...',
+          '>> Clica em Escrever Para Iniciar Um Envio de Mensagem',
+        ],
+        secondSection: [
+          '>> Escrever o seu email, depois o email de quem deseja enviar e também o assunto (se desejar).',
+          '>> Por fim envia um email para uma empresa de preferencia, escreva o assunto em poucas palavras.',
+        ],
+        thirdSection: [
+          '>> Se quiser enviar um arquivo junto com o email, clica no "CLIPS" e logo depois clicar em anexar arquivo...',
+        ],
+        fourthSection: [
+          '>> Logo depois de finalizar o texto e as instruções anteriores clicar na "Setinha para direita", e pronto o processo está finalizado!',
+        ],
+      }}
     />
   )
 }
@@ -35,13 +71,18 @@ export function InfoStartSecond(): JSX.Element {
       before={<InfoStartFirst />}
       after={<InfoStartThird />}
       fap_logo={Fap_logo}
-      level="Iniciante - Como ligar e desligar seu smartphone e tirar print. 📱"
-      generic_img={Phone_off}
-      title_second={['Como ligar e desligar seu smartphone e tirar print']}
-      text_rest={[
-        'Para ligar e desligar seu smartphone, encontra o botão power do seu smartphone localizado muitas vezes na lateral do celular. 🤔',
-        'E para tirar print mantenha precionado os dois botões de power e também o botão de volume baixo, segurando os dois ira tirar print do seu celular. 🖋️',
-      ]}
+      level="Como se conectar no Wi-Fi no Samsung S20 Android 9 - Criado por Felipe 📱"
+      generic_img={[Wifi_phoneFirst, Wifi_phoneSecond]}
+      title_second={['1° passo', '2° passo']}
+      text_rest={{
+        fistSection: [
+          '>> Para conectar ao wi-fi de seu smartphone, irá em configuração e então procurará a opção "conexões" e assim irá clicar nesta opção!',
+        ],
+        secondSection: [
+          '>> Ao entrar nesta tela irá ver se o Wi-Fi estará ativado, enfim irá procurar a rede e clicar nela.',
+          '>> Então adicionando uma senha e conectando sobre o nome do Wi-Fi, você pode usar a vontade sua internet.',
+        ],
+      }}
     />
   )
 }
@@ -52,13 +93,25 @@ export function InfoStartThird(): JSX.Element {
       before={<InfoStartSecond />}
       after={<InfoStartFourth />}
       fap_logo={Fap_logo}
-      level="Iniciante - Como alterar a tela de fundo do smartphone 📱"
-      generic_img={Phone_background}
-      title_second={['Como alterar a tela de fundo do smartphone']}
-      text_rest={[
-        'O dispositivo iniciado vai nas configurações do celular, e clica sobre tela em plano da tela, você será direcionado na galearia. 📦',
-        'E na galeria seleciona a imagem que deseja adicionar, e pronto seu dispositivo foi feito as alterações de plano de tela. 🎳',
+      level="Como trocar o wallpaper no iPhone - Retirado de: iPhone 11, iOS 16 - Criado por João📱"
+      generic_img={[
+        wallpaper_phoneFirst,
+        wallpaper_phoneSecond,
+        wallpaper_phoneThird,
       ]}
+      title_second={['1° passo', '2° passo', '3° passo']}
+      text_rest={{
+        fistSection: [
+          '>> Você deve clicar nos ajustes e ir onde a seta indica (Wallpaper)',
+        ],
+        secondSection: [
+          '>> Após isso irá aparecer essas opções',
+          '>> Clicar no símbolo azul  está na hora de escolher a sua foto',
+        ],
+        thirdSection: [
+          '>> Agora só escolher sua foto favorita é pronto papel de parede está com a sua cara',
+        ],
+      }}
     />
   )
 }
@@ -69,15 +122,26 @@ export function InfoStartFourth(): JSX.Element {
       before={<InfoStartThird />}
       after={<InfoStartFifth />}
       fap_logo={Fap_logo}
-      level="Iniciante - Como alterar a Data e Hora do seu dispositivo. 📱"
-      generic_img={Phone_date}
-      title_second={['Como alterar a Data e Hora do seu dispositivo']}
-      text_rest={[
-        ' Sobre o dispositivo arrasta com o cursor a cima para baixo e encontrara opções extras.',
-        ' Com as opções mostradas aparecera uma opções de engrenagem uma ferramenta que costuma a ser mostrado no canto ao lado de data e hora do dispositivo.',
-        ' Acessando essa ferramenta localiza uma opções de lupa clica sobre ele, e pesquisa a opção de data ou hora, que já aparece a opção de data e hora do dispositivo.',
-        ' Dai adiante é só fazer as suas configurações como desejar. 🧩',
+      level="Como instalar um aplicativo da Player Store - Criado por Odilon Android 11 - Moto E20 📱"
+      generic_img={[
+        Install_appFirst,
+        Install_appSecond,
+        Install_appThird,
+        Install_appFourth,
       ]}
+      title_second={['1° passo', '2° passo', '3° passo', '4° passo']}
+      text_rest={{
+        fistSection: ['>> Clica no aplicativo da Player Store'],
+        secondSection: [
+          '>> Clica na barra superior onde está escrito pesquisa apps e jogos',
+        ],
+        thirdSection: [
+          '>> Um exemplo que usaremos será o Facebook, digite o nome do aplicativo em que desejar e clicar na lupa em verde que está no teclado.',
+        ],
+        fourthSection: [
+          '>> Clique em instalar e logo após a instalação aperte em abrir',
+        ],
+      }}
     />
   )
 }
@@ -86,16 +150,50 @@ export function InfoStartFifth(): JSX.Element {
   return (
     <InfoSection
       before={<InfoStartFourth />}
+      after={<InfoStartSixth />}
+      fap_logo={Fap_logo}
+      level="Como mudar toque do Celular (ligação) - (Alarme) Patrick - Android 9 📱"
+      generic_img={[
+        Section_configFirst,
+        Section_configSecond,
+        Section_configThird,
+        Section_configFourth,
+      ]}
+      title_second={['1° passo', '2° passo', '3° passo', '4° passo']}
+      text_rest={{
+        fistSection: ['Vai até o aplicativo de Configuração'],
+        secondSection: [
+          'Sobre as configurações encontra a opção de som do dispositivo',
+        ],
+        thirdSection: [
+          'Sobre Som, vai aparecer essa opção Som de alarme padrão',
+        ],
+        fourthSection: [
+          'E também é mesma coisa para alarme, acessa Toque do telefone para alterar seu som de alerta.',
+        ],
+      }}
+    />
+  )
+}
+
+export function InfoStartSixth(): JSX.Element {
+  return (
+    <InfoSection
+      before={<InfoStartFifth />}
       after={<InfoStartFinished />}
       fap_logo={Fap_logo}
-      level="Iniciante - Criando um Email. 📱"
-      generic_img={Phone_email}
-      title_second={['Criando um Email']}
-      text_rest={[
-        ' Para criar uma conta no email é necessario criar um login em um navegador como por exemplo gmail.',
-        ' Depois disso clicando sobre um aplicativo do google (gmail, google, play store...), ira aparecer as informações de (nome, sobrenome e dados gerais).',
-        'Depois é aceitando os termos e pronto terminou a criação de sua conta. 🚀',
-      ]}
+      level="Como adicionar ou alterar sua senha do Celular - Alan - Android 11 📱"
+      generic_img={[Pass_configFirst, Pass_configSecond, Pass_configThird]}
+      title_second={['1° passo', '2° passo', '3° passo']}
+      text_rest={{
+        fistSection: ['Acessa o aplicativo de configuração primeiro'],
+        secondSection: [
+          'Sobre as configurações encontra a opção de Segurança e local e acessa',
+        ],
+        thirdSection: [
+          'Sobre Segurança e local, aparecera a opção de Bloqueio de tela para alteração e adição de senha.',
+        ],
+      }}
     />
   )
 }
@@ -104,8 +202,8 @@ export function InfoStartFinished(): JSX.Element {
   return (
     <InfoModel
       icon_book={icon_win}
-      title_text="Parabéns Você Finalizou o Manual Inicial do Smartphone. 🚀"
-      opening="Nossas opções estarão disponíveis mesmo que você termina (Iniciante e Intermediário), de Práticas Básicas Do Smartphone - Manual"
+      title_text="Parabéns Você Finalizou o Smartphone - Manual. 🚀"
+      opening="Nossas opções estão disponíveis mesmo que você termina a aprendizagem, espero que nosso projeto foi util para você. Agradeço pela sua atenção."
     />
   )
 }
