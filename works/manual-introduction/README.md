@@ -27,4 +27,4 @@
   
 ![resposive](https://github.com/Vavatrewq/manual-introduction/blob/master/src/assets/gif/responsive-smart.gif)
  
- <p align="center">2022 | Wagner De Souza Mendes | DEV 🫡</p>
+ <p align="center">2023 | Wagner De Souza Mendes | DEV 🫡</p>
